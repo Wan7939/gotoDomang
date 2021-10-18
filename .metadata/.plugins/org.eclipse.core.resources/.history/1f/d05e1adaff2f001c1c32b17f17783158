@@ -1,0 +1,5 @@
+package com.gotoDomang.config;
+
+public class DatabaseConfig {
+
+}
