@@ -1,0 +1,5 @@
+package com.gotoDomang.user.model;
+
+public class User {
+
+}

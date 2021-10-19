@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+header {height: 55px;}
+header .logo {height: 50px;}
+header .login-info {height: 50px;}
+header .font-color{color:#F5A9BC;}
+.header-color {background-color:#A9D0F5; }
+
+
+footer {height: 50px;}

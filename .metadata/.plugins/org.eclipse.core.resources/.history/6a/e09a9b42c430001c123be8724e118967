@@ -1,0 +1,10 @@
+package com.gotoDomang.hotel;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HotelController {
+
+	// 요청 URL: http://localhost/hotel/list_view
+		@RequestMapping("/hotel/list_view")
+}

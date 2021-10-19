@@ -1,0 +1,17 @@
+package com.gotoDomang;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.sun.org.slf4j.internal.Logger;
+
+@SpringBootTest
+class GotoDomangApplicationTests {
+	
+	private Logger logger = LoggerFactroy.getLogger(tihs.getClass());
+
+	@Test
+	void contextLoads() {
+	}
+
+}

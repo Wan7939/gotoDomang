@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+header {height: 55px;}
+header .logo {height: 50px;}
+header .login-info {height: 30px;}
+header .login-info {background-color:#F5F6CE; }
+header .font-color{color:#F7819F;}
+header {background-color:#F5F6CE; }
+
+.btn-sign-in {background-color:#F5F6CE;}
+.btn-sign-up {background-color:#CEF6D8;}
+footer {height: 50px;}

@@ -1,0 +1,5 @@
+package com.gotoDomang.user;
+
+public class UserController {
+
+}

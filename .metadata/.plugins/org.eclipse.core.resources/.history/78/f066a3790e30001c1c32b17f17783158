@@ -1,0 +1,6 @@
+package com.gotoDomang.user.bo;
+
+public class UserBO {
+	
+	public void insertUser(String)
+}

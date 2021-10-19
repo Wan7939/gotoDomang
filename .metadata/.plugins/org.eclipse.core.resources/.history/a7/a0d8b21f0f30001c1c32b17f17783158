@@ -1,0 +1,7 @@
+package com.gotoDomang.user;
+
+@RequestMapping("/user")
+@RestController
+public class UserRestController {
+
+}

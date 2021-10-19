@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<div class="d-flex justify-content-center mt-5">
+	
+		
+	
+	<div class=" contents-box col-9">
+	
+		<div class="d-flex write-box border rounded m-3">
+		<img src="https://cdn.pixabay.com/photo/2012/11/21/10/24/building-66789__340.jpg" width="350" height="350"  alt="이미지">
+				<content id="content" class="w-100 h-100 border-0" >
+				<span>호텔 이름: 신라호텔</span>
+				<span>호텔 위치: 서울시 송파구 올림픽로 135</span>
+				<span>호텔 설명: 인천(중구)에 위치한 파라다이스시티에 숙박하
+				실 경우 차로 10분 정도 이동하면 BMW 드라이빙 센터 및 거잠포 해변에 가실 수 있습니다. 이 5성급 리조트에서 마시란 해변까지는 6.4km 떨어져 있으며, 7.2km 거리에는 실미도 해수욕장도 있습니다.카지노에서 그날의 운을 시험해보고 야외 수영장 및 실내 수영장 등의 다른 레크리에이션 시설을 이용하셔도 좋습니다. 이 리조트에는 이 밖에도 무료 무선 인터넷, 콘시어지 서비스 및 기념품점/신문 가판대도 마련되어 있습니다.이 리조트에는 3 개 레스토랑이 있으며 이중 하나인 Imperial Treasure에서 식사를 간단히 해결하실 수 있습니다. 또는 편하게 객실에서 24시간 룸서비스를 이용하실 수 있어요. 커피숍/카페에서는 스낵이 제공됩니다. 바/라운지 또는 풀사이드 바에서는 좋아하는 음료를 마시며 느긋한 시간을 보내실 수 있어요. 아침 식사(뷔페)를 매일 06:30 ~ 10:30에 유료로 이용하실 수 있습니다.대표적인 편의 시설과 서비스로는 무료 유선 인터넷, 로비의 무료 신문, 드라이클리닝/세탁 서비스 등이 있습니다. 왕복 공항 셔틀(정해진 시간에 운행) 서비스를 무료로 이용하실 수 있습니다.711개 객실에는 냉장고 및 무료 미니바 품목도 갖추어져 있어 편하게 머무실 수 있습니다. 유선 및 무선 인터넷이 무료로 지원되며 평면 TV에서는 케이블 프로그램을 시청하실 수 있습니다. 별도의 욕조 및 샤워 시설을 갖춘 전용 욕실에는 전신 욕조 및 레인폴 샤워기도 마련되어 있습니다. 편의 시설/서비스로는 전화 외에 금고 및 전기 주전자도 있습니다.</span>
+				<span>호텔 가격:</span>
+				<span>호텔 번호:</span>
+				</content>
+	</div>
+</div>
