@@ -1,0 +1,18 @@
+package com.gotoDomang.hotel.model;
+
+import java.util.Date;
+
+public class Hotel {
+	
+	private int id;
+	private int hotelId;
+	private String hotelName;
+	private String location;
+	private int price;
+	private String hotelNumber;
+	private String content;
+	private String imagePath;
+	private Date createdAt;
+	private Date updatedAt;
+
+}

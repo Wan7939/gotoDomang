@@ -1,0 +1,5 @@
+package com.gotoDomang.admin;
+
+public class AdminController {
+
+}

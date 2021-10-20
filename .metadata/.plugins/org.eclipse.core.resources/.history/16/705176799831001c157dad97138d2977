@@ -1,0 +1,5 @@
+package com.gotoDomang.hotel.dao;
+
+public interface HotelDAO {
+
+}

@@ -1,9 +1,0 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<div class="d-flex justify-content-center">
-	<div class="contents-box col-9">
-		<div class="contents-box col-6">
-	</div>
-</div>

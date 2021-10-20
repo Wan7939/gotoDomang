@@ -1,0 +1,16 @@
+package com.gotoDomang.hotel.model;
+
+public class Hotel {
+	
+	private int id;
+	private int hotelId;
+	private String hotelName;
+	private String location;
+	private int price;
+	private String hotelNumber;
+	private String content;
+	private String imagePath;
+	createdAt;
+	updatedAt;
+
+}

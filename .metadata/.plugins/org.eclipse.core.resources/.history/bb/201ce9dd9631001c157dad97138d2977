@@ -1,0 +1,8 @@
+package com.gotoDomang.hotel;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HotelRestController {
+
+}

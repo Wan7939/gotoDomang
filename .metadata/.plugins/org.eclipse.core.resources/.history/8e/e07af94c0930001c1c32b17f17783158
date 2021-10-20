@@ -1,9 +1,0 @@
-@charset "UTF-8";
-
-header {height: 50px;}
-header .logo {height: 50px;}
-header .login-info {height: 50px;}
-
-.headerColor
-
-footer {height: 50px;}
