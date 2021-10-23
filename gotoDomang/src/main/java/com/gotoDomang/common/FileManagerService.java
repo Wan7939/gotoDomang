@@ -1,6 +1,5 @@
 package com.gotoDomang.common;
 
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-
 @Component  // 스프링 빈
 public class FileManagerService {
 	
@@ -22,10 +20,10 @@ public class FileManagerService {
 	// 실제 이미지가 저장될 경로					D:\박경완\7_spring_preject\gotoDomang_workspace\images
 	public final static String FILE_UPLOAD_PATH = "D:\\박경완\\7_spring_preject\\gotoDomang_workspace\\images/";
 	
-	public String saveFile(String loginId, MultipartFile file) throws IOException {
-		//  파일 디렉토리 경로 예	: marobiana_162099585780/apple.png
+	public String saveFile(MultipartFile file) throws IOException {
+		//  파일 디렉토리 경로 예	: hotel_162099585780/apple.png
 		//  파일명이 겹치지 않게 현재시간을 경로에 붙여준다.
-		String directoryName = loginId + "_" + System.currentTimeMillis() + "/";
+		String directoryName = "hotel" + "_" + System.currentTimeMillis() + "/";
 		String filePath = FILE_UPLOAD_PATH + directoryName;
 		
 		File directory = new File(filePath);
@@ -40,7 +38,7 @@ public class FileManagerService {
 		Files.write(path, bytes);
 		
 		// 이미지 URL path를 리턴한다.
-		// 예) http://localhost/images/s1727060_1633346649040/dodo2.jpg
+		// 예) http://localhost/images/hotel_1633346649040/dodo2.jpg
 		return "/images/" + directoryName + file.getOriginalFilename();
 	}
 }

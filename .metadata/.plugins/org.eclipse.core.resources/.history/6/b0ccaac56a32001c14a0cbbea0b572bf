@@ -1,0 +1,15 @@
+package com.gotoDomang.hotel.dao;
+
+
+
+import org.springframework.stereotype.Repository;
+import org.springframework.web.multipart.MultipartFile;
+
+
+@Repository
+public interface HotelDAO {
+	
+	public int insertHotel(String hotelName, String location,
+			int price, String hotelNumber, String content,
+			MultipartFile imagePath);
+}

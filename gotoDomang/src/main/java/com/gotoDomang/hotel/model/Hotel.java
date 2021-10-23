@@ -5,7 +5,6 @@ import java.util.Date;
 public class Hotel {
 	
 	private int id;
-	private int hotelId;
 	private String hotelName;
 	private String location;
 	private int price;
@@ -21,12 +20,6 @@ public class Hotel {
 	}
 	public void setId(int id) {
 		this.id = id;
-	}
-	public int getHotelId() {
-		return hotelId;
-	}
-	public void setHotelId(int hotelId) {
-		this.hotelId = hotelId;
 	}
 	public String getHotelName() {
 		return hotelName;

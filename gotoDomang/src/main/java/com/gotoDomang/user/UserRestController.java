@@ -33,7 +33,7 @@ public class UserRestController {
 	public Map<String, Boolean> isDuplicatedId(
 			@RequestParam("loginId") String loginId) {
 		
-		// 로그인 아이디 중복여부 DB 조회
+		
 	
 		// 중복 여부에 대한 결과 Map 생성
 		 Map<String, Boolean> result = new HashMap<>();
