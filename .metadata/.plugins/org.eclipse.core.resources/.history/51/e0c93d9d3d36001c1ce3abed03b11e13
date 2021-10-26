@@ -24,11 +24,11 @@ public class HotelRestController {
 			@RequestParam("price") int price,
 			@RequestParam("hotelNumber") String hotelNumber,
 			@RequestParam("content") String content,
-			@RequestParam("imagePath") MultipartFile file){
+			@RequestParam("imagePath") MultipartFile imagePath){
 		
 		Map<String, Object> result = new HashMap<>();
 		
-		int row = hotelBO.insertHotel(hotelName, location, price, hotelNumber, content, file);
+		int row = hotelBO.insertHotel(hotelName, location, price, hotelNumber, content, imagePath);
 		if (row > 0) {
 			result.put("result", "success");
 		} else {

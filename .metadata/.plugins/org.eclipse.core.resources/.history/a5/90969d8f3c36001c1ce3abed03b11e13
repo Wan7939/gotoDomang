@@ -32,6 +32,6 @@ public class HotelBO {
 				imagePath = null;
 			}
 		}
-		return hotelDAO.insertHotel(hotelName, location, price, hotelNumber, content, imagePath);
+		return hotelDAO.insertHotel(hotelName, location, price, hotelNumber, content, file);
 	}
 }

@@ -21,7 +21,7 @@
 				, #{price}
 				, #{hotelNumber}
 				, #{content}
-				, #{imagePath}
+				, #{imagePath, JdbcType=VARCHAR}
 				, NOW()				
 				, NOW()
 			)

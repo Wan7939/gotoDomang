@@ -22,7 +22,7 @@
 				, #{hotelNumber}
 				, #{content}
 				, #{imagePath}
-				, NOW()				
+				, NOW()
 				, NOW()
 			)
 		</insert>

@@ -102,9 +102,14 @@ $(document).ready(function() {
 		console.log(hotelNumber);
 		formData.append('content', content);
 		console.log(content);
-		formData.append('imagePath', $('#imagePath')[0].files[0]);
-		console.log(imagePath);
-	
+	//	formData.append('imagePath', $('#imagePath')[0].files[0]);
+		var fReader = new FileReader();
+		fReader.readAsDataURL(input.files[0]);
+		fReader.onloadend = function(event){
+		    var img = document.getElementById("imagePath");
+		    img.src = event.target.result;
+		}
+		
 	
 		// ajax
 		$.ajax({
