@@ -1,5 +1,0 @@
-package com.gotoDomang.user.dao;
-
-public interface UserDAO {
-
-}

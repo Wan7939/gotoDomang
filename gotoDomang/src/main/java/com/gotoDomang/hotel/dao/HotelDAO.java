@@ -14,7 +14,7 @@ import com.gotoDomang.hotel.model.Hotel;
 public interface HotelDAO {
 	// @Param("hotelName") String  hotelName,
 	
-	public List<Hotel> selectPostList();
+	public List<Hotel> selectHotelList();
 	
 	public int insertHotel(
 			@Param("hotelName") String  hotelName,

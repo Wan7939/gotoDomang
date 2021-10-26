@@ -1,5 +1,0 @@
-package com.gotoDomang.test.dao;
-
-public interface TestDAO {
-
-}
