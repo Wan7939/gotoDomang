@@ -21,7 +21,7 @@
 			<jsp:include page="../include_admin/gnb_admin.jsp" />  
 		</header>
 		<div class="d-flex">
-			 <aside>
+			 <aside class="col-3" >
 			 	<jsp:include page="../include_admin/aside.jsp" />  
 	        </aside>
 			<section class="contents">

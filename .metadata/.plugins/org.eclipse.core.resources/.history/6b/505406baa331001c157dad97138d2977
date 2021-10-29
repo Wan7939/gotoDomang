@@ -1,8 +1,0 @@
-package com.gotoDomang.hotel.dao;
-
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface HotelDAO {
-	
-}

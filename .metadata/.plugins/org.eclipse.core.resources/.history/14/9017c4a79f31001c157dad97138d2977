@@ -1,5 +1,0 @@
-package com.gotoDomang.Interceptor;
-
-public class PermissionInterceptor {
-
-}

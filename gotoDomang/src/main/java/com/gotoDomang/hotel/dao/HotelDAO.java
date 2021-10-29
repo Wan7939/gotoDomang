@@ -23,4 +23,8 @@ public interface HotelDAO {
 			@Param("hotelNumber") String hotelNumber,
 			@Param("content") String content,
 			@Param("imagePath") String imagePath);
+	
+	public Hotel selectHotel(int id);
+	
+	public void deleteHotel(int id);
 }

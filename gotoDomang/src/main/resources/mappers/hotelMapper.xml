@@ -16,6 +16,7 @@
 			,`updatedAt`
 		FROM
 			`hotel`
+		ORDER BY `id` DESC
 	</select>
 	<insert id="insertHotel" parameterType="map">
 			INSERT INTO `hotel`
@@ -41,4 +42,30 @@
 				, NOW()
 			)
 		</insert>
+		<select id="selectHotel" resultType="com.gotoDomang.hotel.model.Hotel">
+		SELECT
+			`id`
+			,`hotelName`
+			,`location`
+			,`price`
+			,`hotelNumber`
+			,`content`
+			,`imagePath`
+			,`createdAt`
+			,`updatedAt`
+		FROM
+			`hotel`
+		WHERE
+			`id` = #{id}
+	</select>
+	
+	<delete id="deleteHotel" parameterType="int">
+		DELETE
+		FROM
+			`hotel`
+		WHERE
+			`id` = #{id}
+	</delete>
+	
+		
 </mapper>
