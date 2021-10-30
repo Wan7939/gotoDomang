@@ -1,0 +1,6 @@
+package com.gotoDomang.booking.bo;
+
+@Service
+public class BookingBO {
+
+}

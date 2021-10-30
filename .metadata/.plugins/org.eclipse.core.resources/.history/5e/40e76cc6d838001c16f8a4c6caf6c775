@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<h1>예약 확인</h1>
+<div class="star-ratings">
+	<div 
+    class="star-ratings-fill space-x-2 text-lg"
+    :style="{ width: ratingToPercent + '%' }"
+	>
+		<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+	</div>
+	<div class="star-ratings-base space-x-2 text-lg">
+		<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+	</div>
+	
+</div>

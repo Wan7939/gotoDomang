@@ -27,8 +27,9 @@
 			</div>
 			
 			<div class="d-flex justify-content-end">
-				<button id="deleteBtn" class="btn btn-danger mr-2" data-hotle-id="${hotel.id}" >삭제하기</button>
+				<button id="deleteBtn" class="btn btn-danger mr-2" data-hotel-id="${hotel.id}" >삭제하기</button>
 				<button id="upateBtn" class="btn btn-success " >수정하기</button>
+				<!-- <a href="/post/post_detail_view?postId=${post.id}">${post.subject}</a>  -->
 			</div>
 		</c:forEach>
 		</div>
@@ -38,12 +39,13 @@
 <script>
 
 	$(document).ready(function() {
-		$('#deleteBtn').on('click', function() {
+		$('#deleteBtn').on('click', function(e) {
+			e.preventDefault();
 			let hotelId = $('#deleteBtn').data('hotel-id');
 			alert(hotelId);
 			
 			$.ajax({
-				type:'post'
+				type:'delete'
 				, url: '/hotel/delete'
 				, data: {"hotelId" : hotelId}
 				, success: function(data) {
@@ -53,7 +55,7 @@
 					}
 				}
 				, error: function(e) {
-					alert("error " + e.message);
+					alert('삭제하는데 실패했습니다.' + e);
 				}
 			});
 		});

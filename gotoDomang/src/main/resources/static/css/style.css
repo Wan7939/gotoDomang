@@ -17,5 +17,6 @@ header {background-color:#F5F6CE; }
 .btn-sign-in {background-color:#F5F6CE;}
 .btn-sign-up {background-color:#CEF6D8;}
 
+#inputSize {width: 400px;}
 
 footer {height: 50px;}

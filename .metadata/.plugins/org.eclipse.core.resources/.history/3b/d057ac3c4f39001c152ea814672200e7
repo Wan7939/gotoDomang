@@ -1,0 +1,9 @@
+package com.gotoDomang.booking.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BookingDAO {
+	public List<Booking> selectBookingList();
+	
+}

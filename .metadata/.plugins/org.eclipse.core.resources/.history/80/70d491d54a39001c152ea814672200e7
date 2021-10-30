@@ -1,0 +1,14 @@
+package com.gotoDomang.booking.model;
+
+public class Booking {
+
+	private int id;
+	private name;
+	private headcount;
+	private day;
+	private date;
+	private phoneNumber;
+	private state;
+	private createdAt;
+	private updatedAt;
+}

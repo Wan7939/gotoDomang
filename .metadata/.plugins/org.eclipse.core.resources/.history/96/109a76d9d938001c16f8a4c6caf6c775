@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+header {height: 65px;}
+header .logo {height: 50px;}
+header .login-info {height: 50px;}
+header .font-color{color:#F7819F;}
+
+
+aside{width: 250px;}
+aside {background-color:#81BEF7;}
+
+.menu-font {
+    color:white;
+    font-size:17px;
+    font-weight: bold;
+}
+
+.menu-font:hover {
+    color:white;
+    border: 2px solid white;
+}
+
+#hotel-card{ height:350px;}
+#hotel-detail {
+        border: 1px solid #735e5e;
+         height:350px;
+        overflow:auto; 
+    }
+   
+    
+#imageBtn {background-color:#81BEF7;}
+#imageBtn {color:white;}
+#registrationBtn {background-color:#81BEF7;}
+#registrationBtn {color:white;}
+
+footer {height: 50px;}
+
+
+
+
+/* component */
+
+.star-rating {
+  border:solid 1px #ccc;
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+
+/* explanation */
+
+article {
+  background-color:#ffe;
+  box-shadow:0 0 1em 1px rgba(0,0,0,.25);
+  color:#006;
+  font-family:cursive;
+  font-style:italic;
+  margin:4em;
+  max-width:30em;
+  padding:2em;
+}

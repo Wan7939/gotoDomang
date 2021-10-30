@@ -1,0 +1,5 @@
+package com.gotoDomang.booking.model;
+
+public class Booking {
+
+}
