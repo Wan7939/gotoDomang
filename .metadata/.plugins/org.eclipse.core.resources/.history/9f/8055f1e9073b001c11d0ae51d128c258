@@ -1,0 +1,40 @@
+package com.gotoDomang.booking.bo;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gotoDomang.booking.dao.BookingDAO;
+import com.gotoDomang.booking.model.Booking;
+import com.gotoDomang.hotel.dao.HotelDAO;
+import com.gotoDomang.hotel.model.Hotel;
+
+@Service
+public class BookingBO {
+
+	@Autowired
+	private BookingDAO bookingDAO;
+	
+	@Autowired
+	private HotelDAO hotelDAO;
+	
+	public List<Booking> getBookingList() {
+		return bookingDAO.selectBookingList();
+	}
+	
+	public Hotel getHotel(int hotelId) {
+		return hotelDAO.selectPost(hotelId);
+	}
+	
+	public int insertBooking(
+			int hotelId
+			,String name
+			,String date
+			,int day
+			,int headcount
+			,String phoneNumber) {
+		
+		return bookingDAO.insertBooking(hotelId, name, date, day, headcount, phoneNumber, date);
+	}
+}

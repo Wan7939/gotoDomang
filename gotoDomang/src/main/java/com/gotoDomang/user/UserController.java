@@ -19,7 +19,7 @@ public class UserController {
 	
 	// 요청 URL: http://localhost/user/sign_up_view
 	@RequestMapping("/sign_up_view")
-	public String signInView(Model model) {
+	public String signUpView(Model model) {
 		model.addAttribute("viewName", "user/sign_up");
 		return "template/layout";
 	}

@@ -1,0 +1,18 @@
+package com.gotoDomang.review;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/user")
+@Controller
+public class ReviewController {
+
+	
+	// 요청 URL: http://localhost/user/review/create
+			@RequestMapping("/review/create")
+			public String signinView(Model model) {
+				model.addAttribute("viewName", "review/review_create");
+				return "template/layout";
+			}
+}

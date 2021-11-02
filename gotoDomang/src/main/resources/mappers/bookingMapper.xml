@@ -6,6 +6,7 @@
 	<select id="selectBookingList" resultType="com.gotoDomang.booking.model.Booking">
 		SELECT
 			`id`
+			,`hotelId`
 			, `name`
 			, `headcount`
 			, `day`
@@ -22,6 +23,7 @@
 	<insert id="insertBooking" parameterType="map">
  		INSERT INTO `booking`(
  			`name` 
+ 			,`hotelId`
  			, `headcount`
  			, `day`
  			, `date`
@@ -31,6 +33,7 @@
  			, `updatedAt`
  		) VALUES (
  			#{name}
+ 			, #{hotelId}
  			, #{headcount}
  			, #{day}
  			, #{date}
@@ -40,4 +43,22 @@
  			, now()
  		)
  	</insert>
+ 	<select id="selectHotel" parameterType="int" resultType="com.gotoDomang.booking.model.Booking">
+ 		SELECT
+ 			`id`
+			,`hotelId`
+			, `name`
+			, `headcount`
+			, `day`
+			, `date`
+			, `phoneNumber`
+			, `state`
+			, `createdAt`
+			, `updatedAt`
+		FROM
+			`booking`
+		WHERE
+			`hotelId` = #{hotelId}
+ 	</select>
+ 	
 </mapper>

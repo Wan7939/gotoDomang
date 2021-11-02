@@ -1,0 +1,15 @@
+package com.gotoDomang.review;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class ReviewController {
+
+	
+	// 요청 URL: http://localhost/user/insert_reservation
+			@RequestMapping("/insert_reservation")
+			public String signinView(Model model) {
+				model.addAttribute("viewName", "reservation/insert_reservation");
+				return "template/layout";
+			}
+}

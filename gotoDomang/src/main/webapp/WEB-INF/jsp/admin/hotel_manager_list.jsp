@@ -28,8 +28,8 @@
 			
 			<div class="d-flex justify-content-end">
 				<button id="deleteBtn" class="btn btn-danger mr-2" data-hotel-id="${hotel.id}" >삭제하기</button>
-				<button id="upateBtn" class="btn btn-success " >수정하기</button>
-				<!-- <a href="/post/post_detail_view?postId=${post.id}">${post.subject}</a>  -->
+				<!--<button id="upateBtn" class="btn btn-success " >수정하기</button>
+				 <a href="/post/post_detail_view?postId=${post.id}">${post.subject}</a>  -->
 			</div>
 		</c:forEach>
 		</div>

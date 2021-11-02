@@ -1,0 +1,28 @@
+package com.gotoDomang.review;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.gotoDomang.hotel.model.Hotel;
+
+@RequestMapping("/user")
+@Controller
+public class ReviewController {
+
+	
+	// 요청 URL: http://localhost/user/review/create
+			@RequestMapping("/review/create")
+			public String signinView(Model model) {
+				List<Hotel> hotelList = hotelBO.getHotelList();
+				model.addAttribute("viewName", "review/review_create");
+				model.addAttribute("hotelList", hotelList);
+				return "template/layout";
+			}
+			
+			List<Hotel> hotelList = hotelBO.getHotelList();
+			model.addAttribute("viewName", "admin/hotel_manager_list");
+			model.addAttribute("hotelList", hotelList);
+}
