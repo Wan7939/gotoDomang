@@ -28,8 +28,8 @@ public class BookingController {
 				Model model) 	{
 		
 			Booking booking = bookingBO.getBooking(hotelId);
-			model.addAttribute("reservation", booking);
 			model.addAttribute("viewName", "reservation/insert_reservation");
+			model.addAttribute("reservation", booking);
 			return "template/layout";
 		}
 }

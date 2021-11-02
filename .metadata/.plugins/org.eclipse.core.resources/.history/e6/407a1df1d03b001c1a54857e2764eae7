@@ -32,7 +32,7 @@
 $(document).ready(function() {
 	$('#reservationBtn').on('click', function() {
 		// validation check
-		let hotelId = $('#reservationBtn').data('hotel-id');
+		let hotelId = $(this).data('hotel-id');
 			alert(hotelId);
 			
 		let name = $('input[name=name]').val().trim();
@@ -40,11 +40,7 @@ $(document).ready(function() {
 		let day = $('input[name=day]').val().trim();
 		let headcount = $('input[name=headcount]').val().trim();
 		let phoneNumber = $('input[name=phoneNumber]').val().trim();
-		alert(name);
-		alert(date);
-		alert(day);
-		alert(headcount);
-		alert(phoneNumber);
+		
 		if (name == '') {
 			alert("이름을 입력하세요.");
 			return;

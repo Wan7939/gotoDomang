@@ -33,6 +33,6 @@ public class BookingBO {
 			,int headcount
 			,String phoneNumber) {
 		
-		return bookingDAO.insertBooking(hotelId, name, date, day, headcount, phoneNumber, "대기중");
+		return bookingDAO.insertBooking(hotelId, name, date, day, headcount, phoneNumber, date);
 	}
 }

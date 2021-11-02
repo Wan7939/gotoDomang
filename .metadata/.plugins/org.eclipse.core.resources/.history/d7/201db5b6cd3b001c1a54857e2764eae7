@@ -27,9 +27,9 @@ public class BookingController {
 				@RequestParam("hotelId") int hotelId,
 				Model model) 	{
 		
-			Booking booking = bookingBO.getBooking(hotelId);
-			model.addAttribute("reservation", booking);
+			Booking hotel = bookingBO.getBooking(hotelId);
 			model.addAttribute("viewName", "reservation/insert_reservation");
+			model.addAttribute("reservation", hotel);
 			return "template/layout";
 		}
 }

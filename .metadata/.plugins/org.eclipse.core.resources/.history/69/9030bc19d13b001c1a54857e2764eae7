@@ -32,7 +32,7 @@
 $(document).ready(function() {
 	$('#reservationBtn').on('click', function() {
 		// validation check
-		let hotelId = $('#reservationBtn').data('hotel-id');
+		let hotelId = $(this).data('hotel-id');
 			alert(hotelId);
 			
 		let name = $('input[name=name]').val().trim();
