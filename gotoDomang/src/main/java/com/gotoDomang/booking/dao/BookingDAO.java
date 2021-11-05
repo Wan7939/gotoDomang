@@ -12,7 +12,8 @@ public interface BookingDAO {
 	public List<Booking> selectBookingList();
 	
 	public int insertBooking(
-			@Param("hotelId") int hotelId
+			@Param("userId") int userId
+			,@Param("hotelId") int hotelId
 			,@Param("name") String name
 			, @Param("date") String date
 			, @Param("day") int day

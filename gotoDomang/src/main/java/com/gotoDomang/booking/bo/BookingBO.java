@@ -26,13 +26,14 @@ public class BookingBO {
 	}
 	
 	public int insertBooking(
-			int hotelId
+			int userId
+			,int hotelId
 			,String name
 			,String date
 			,int day
 			,int headcount
 			,String phoneNumber) {
 		
-		return bookingDAO.insertBooking(hotelId, name, date, day, headcount, phoneNumber, "대기");
+		return bookingDAO.insertBooking(userId,hotelId, name, date, day, headcount, phoneNumber, "대기");
 	}
 }

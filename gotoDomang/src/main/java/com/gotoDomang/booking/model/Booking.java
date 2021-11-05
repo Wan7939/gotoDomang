@@ -5,6 +5,7 @@ import java.util.Date;
 public class Booking {
 
 	private int id;
+	private int userId;
 	private int hotelId;
 	private String name;
 	private int headcount;
@@ -21,6 +22,12 @@ public class Booking {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 	public int getHotelId() {
 		return hotelId;

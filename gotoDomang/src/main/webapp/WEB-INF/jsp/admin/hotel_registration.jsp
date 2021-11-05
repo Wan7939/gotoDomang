@@ -36,6 +36,7 @@
 				</div>
 				<div  class="d-flex justify-content-center">
 					<button type="button" id="registrationBtn" class="btn btn-block">호텔 등록</button>
+				<!--  <a id="registrationBtn" class="btn btn-block btn-sign-up" href="/hotel/manager_list">호텔 등록2</a> -->	
 				</div>
 			
 	</div>
@@ -117,7 +118,7 @@ $(document).ready(function() {
 			, success: function(data){
 				if (data.result == 'success'){
 					alert("호텔정보가 등록 됐습니다.");
-					location.href ="/reservation/manager_view";
+					location.href ="/hotel/manager_list";
 				}
 			}, error: function(e){
 				alert("호텔 정보 등록에 실패했습니다." + e);
@@ -126,3 +127,4 @@ $(document).ready(function() {
 	});
 });
 </script>
+

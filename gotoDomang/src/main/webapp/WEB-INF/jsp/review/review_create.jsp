@@ -94,13 +94,14 @@
 				return;
 			}
 			
-			alert(reviewText);
+//			alert(reviewText);
 			$.ajax({
 				type:'post',
 				url:'/review/create',
 				data: {"hotelId" : hotelId, "point" : point,"review" : reviewText},
 				success: function(data) {
 					if (data.result == 'success') {
+						alert("리뷰가 등록 되었습니다.");
 						location.reload(); // 새로고침
 					}
 				},

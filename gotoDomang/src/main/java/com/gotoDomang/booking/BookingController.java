@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.gotoDomang.hotel.bo.HotelBO;
 import com.gotoDomang.hotel.model.Hotel;
-import com.gotoDomang.user.bo.UserBO;
+
 
 
 
@@ -28,8 +28,6 @@ public class BookingController {
 	@Autowired
 	private HotelBO hotelBO;
 	
-	@Autowired
-	private UserBO userBO;
 	
 	// 요청 URL: http://localhost/user/insert_reservation
 		@RequestMapping("/insert_reservation")
