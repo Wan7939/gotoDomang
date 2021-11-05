@@ -1,0 +1,15 @@
+package com.gotoDomang.review.model;
+
+import java.util.Date;
+
+public class Review {
+
+	private int id;
+	private int userId;
+	private int hotelId;
+	private String hotelName;
+	private Decimal point;
+	private String review;
+	private Date createdAt;
+	private Date updatedAt;
+}

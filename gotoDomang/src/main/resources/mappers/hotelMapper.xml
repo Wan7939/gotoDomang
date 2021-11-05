@@ -58,7 +58,6 @@
 		WHERE
 			`id` = #{id}
 	</select>
-	
 	<delete id="deleteHotel" parameterType="int">
 		DELETE
 		FROM

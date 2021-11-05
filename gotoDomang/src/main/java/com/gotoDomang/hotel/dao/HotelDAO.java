@@ -26,5 +26,6 @@ public interface HotelDAO {
 	
 	public Hotel selectHotel(int id);
 	
+	
 	public void deleteHotel(int id);
 }

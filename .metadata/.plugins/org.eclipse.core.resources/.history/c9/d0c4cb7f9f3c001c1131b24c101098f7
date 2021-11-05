@@ -1,0 +1,25 @@
+package com.gotoDomang.review.bo;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gotoDomang.review.dao.ReviewDAO;
+import com.gotoDomang.review.model.Review;
+
+@Service
+public class ReviewBO {
+	
+	@Autowired
+	private ReviewDAO reviewDAO;
+	
+	public List<Review> getReviewList(int hotelId) {
+		return reviewDAO.selectReviewList(hotelId);
+	}
+	
+	public int createReview(int hotelId, String hotelName, double point, String review) {
+		return reviewDAO.insertReivew(hotelId, hotelName, point, review);
+	}
+
+}

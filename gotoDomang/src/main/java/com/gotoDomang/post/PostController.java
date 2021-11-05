@@ -33,5 +33,7 @@ public class PostController {
 				model.addAttribute("hotelList", hotelList);
 				return "template/layout";
 			}
+		
+		
 }
 

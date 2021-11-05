@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+header {height: 55px;}
+header .logo {height: 50px;}
+header .login-info {height: 50px;}
+.font-color{color:#F7819F;}
+header {background-color:#F5F6CE; }
+.login-info {background-color:#F5F6CE; }
+
+#hotel-card{ height:350px;}
+#hotel-detail {
+        border: 1px solid #735e5e;
+        height:350px;
+        overflow:auto; 
+    }
+
+.btn-sign-in {background-color:#F5F6CE;}
+.btn-sign-up {background-color:#CEF6D8;}
+
+#inputSize {width: 400px;}
+
+#review-card{ height:100px;}
+
+.star-rating {
+  border:solid 1px #ccc;
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+
+/* explanation */
+
+
+
+
+footer {height: 50px;}

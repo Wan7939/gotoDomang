@@ -23,9 +23,9 @@
 		<input type="text" class="form-control" name="phoneNumber">
 	
 		<button type="button" id="reservationBtn"
-			class="btn btn-warning btn-block mt-3" data-hotel-id="${hotel.id}">예약하기</button>
+			class="btn btn-warning btn-block mt-3" data-hotel-id="${hotelId}">예약하기</button>
+			
 	</div>
-	
 </div>
 
 <script>
@@ -33,18 +33,18 @@ $(document).ready(function() {
 	$('#reservationBtn').on('click', function() {
 		// validation check
 		let hotelId = $('#reservationBtn').data('hotel-id');
-			alert(hotelId);
+			//alert(hotelId);
 			
 		let name = $('input[name=name]').val().trim();
 		let date = $('input[name=date]').val().trim();
 		let day = $('input[name=day]').val().trim();
 		let headcount = $('input[name=headcount]').val().trim();
 		let phoneNumber = $('input[name=phoneNumber]').val().trim();
-		alert(name);
-		alert(date);
-		alert(day);
-		alert(headcount);
-		alert(phoneNumber);
+		//alert(name);
+		//alert(date);
+		//alert(day);
+		//alert(headcount);
+		//alert(phoneNumber);
 		if (name == '') {
 			alert("이름을 입력하세요.");
 			return;

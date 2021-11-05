@@ -4,8 +4,10 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <div class="d-flex mt-5 justify-content-around">
-		<a href="#"><h5>예약확인</h5></a>
-
+	
+			<a href="/user/reservation_list?userId=${user.id}">예약확인</a>
+		
+ 
 	<form method="get" action="/save.php">
 		<div class="input-group">
 			<input type="text" class="form-control" placeholder="호텔 이름을 검색하세요!">

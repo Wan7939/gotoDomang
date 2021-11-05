@@ -1,0 +1,5 @@
+package com.gotoDomang.review.dao;
+
+public interface ReviewDAO {
+
+}
