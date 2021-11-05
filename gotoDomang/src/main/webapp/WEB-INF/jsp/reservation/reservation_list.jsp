@@ -14,15 +14,15 @@
 				<th>상태</th>
 			</tr>
 		</thead>
-		<c:forEach var="hotel" items="${hotelList}">
+			<c:forEach var="content" items="${contentList}">
 		<tbody>
 		<tr>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>${hotel.hotelName}</td>
-			<td>${hotel.hotelNumber}</td>
-			<td></td>
+			<td>${content.booking.name}</td>
+			<td><fmt:formatDate value="${content.booking.date}" pattern="yyyy-MM-dd"/></td>
+			<td>${content.booking.headcount}</td>
+			<td>%%</td>
+			<td>##</td>
+			<td>${content.booking.state}</td>
 		</tr>
 		</tbody>
 		</c:forEach>

@@ -4,9 +4,9 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <div class="d-flex mt-5 justify-content-around">
-	
-			<a href="/user/reservation_list?userId=${user.id}">예약확인</a>
-		
+	<c:if test="${not empty userId}">
+			<a href="/user/reservation_list">예약확인</a>
+	</c:if>
  
 	<form method="get" action="/save.php">
 		<div class="input-group">

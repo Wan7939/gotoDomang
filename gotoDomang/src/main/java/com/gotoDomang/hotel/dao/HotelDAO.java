@@ -16,6 +16,7 @@ public interface HotelDAO {
 	
 	public List<Hotel> selectHotelList();
 	
+	
 	public int insertHotel(
 			@Param("hotelName") String  hotelName,
 			@Param("location") String  location,

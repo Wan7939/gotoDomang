@@ -31,6 +31,7 @@ public class HotelBO {
 	}
 	
 	
+	
 	public Hotel getHotel(int id) {
 		return hotelDAO.selectHotel(id);
 	}

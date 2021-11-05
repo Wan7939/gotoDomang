@@ -12,14 +12,16 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="com.gotoDomang.hotel.model.Hotel"/>
-    <fullyQualifiedTypeName name="com.gotoDomang.hotel.bo.HotelBO"/>
     <fullyQualifiedTypeName name="com.gotoDomang.hotel.dao.HotelDAO"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
-    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Param"/>
     <fullyQualifiedTypeName name="com.gotoDomang.review.model.Review"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.gotoDomang.hotel.bo.HotelBO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.gotoDomang.booking.model.Content"/>
 </qualifiedTypeNameHistroy>
