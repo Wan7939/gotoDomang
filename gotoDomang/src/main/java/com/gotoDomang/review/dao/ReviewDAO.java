@@ -21,4 +21,6 @@ public interface ReviewDAO {
 			@Param("review") String review);
 	
 	public Review selectReview(int id);
+	
+	public int deleteReview(int id);
 }

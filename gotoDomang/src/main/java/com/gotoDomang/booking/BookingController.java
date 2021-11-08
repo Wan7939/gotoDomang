@@ -1,9 +1,13 @@
+
 package com.gotoDomang.booking;
 
 
 
 
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -40,8 +44,14 @@ public class BookingController {
 		// 요청 URL: http://localhost/user/reservation_list
 		@RequestMapping("/reservation_list")
 		public String reservationListView(
-				Model model) 	{
-			List<Content> contentList = contentBO.getContentList(null);
+				Model model, HttpServletRequest request) 	{
+			HttpSession session = request.getSession();
+			Integer userId = (Integer) session.getAttribute("userId");
+			if (userId == null) {
+				// 세션에 id가 없으면 로그인하는 페이지로 이동(redirect)
+				return "redirect:/user/sign_in_view";
+			}
+			List<Content> contentList = contentBO.getContentList(userId);
 			model.addAttribute("viewName", "reservation/reservation_list");
 			model.addAttribute("contentList", contentList);
 			

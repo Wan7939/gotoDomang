@@ -25,5 +25,10 @@ public class ReviewBO {
 	public Review getReview(int id) {
 		return reviewDAO.selectReview(id);
 	}
-
+	
+	public int deleteReviwe(int id) {
+		
+		return reviewDAO.deleteReview(id);
+			
+		}
 }

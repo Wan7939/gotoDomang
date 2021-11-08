@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +22,7 @@ public class ReviewRestController {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired
-	private ReviewBO reviewbo;
+	private ReviewBO reviewBO;
 	
 	@RequestMapping("/review/create")
 	public Map<String, Object> create(
@@ -39,7 +40,7 @@ public class ReviewRestController {
 			return result;
 		}
 		
-		int row = reviewbo.createReview(userId, hotelId, point, review);
+		int row = reviewBO.createReview(userId, hotelId, point, review);
 		if (row > 0) {
 			result.put("result", "success");
 		} else {
@@ -48,4 +49,18 @@ public class ReviewRestController {
 		}
 		return result;
 		}
+	
+	@DeleteMapping("/user/review/delete")
+	public Map<String, Object> delete(
+			@RequestParam("reviewId") int reviewId) {
+		
+	
+		reviewBO.deleteReviwe(reviewId);
+		
+	
+		Map<String, Object> result = new HashMap<>();
+		result.put("result", "success");
+		
+		return result;
+	}
 }

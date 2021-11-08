@@ -1,8 +1,0 @@
-package com.gotoDomang.booking;
-
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-public class BookingRestController {
-
-}

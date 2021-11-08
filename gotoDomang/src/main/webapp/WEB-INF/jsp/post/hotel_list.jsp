@@ -18,10 +18,10 @@
 	</form>
 
 	<select>
-            <option>가격 낮은순</option>
-            <option>가격 높은순</option>
-            <option>별점 낮은순</option>
-            <option>별점 높은순</option>
+            <option class="lowPrice">가격 낮은순</option>
+            <option class="high Price">가격 높은순</option>
+            <option class="lowPoint">별점 낮은순</option>
+            <option class="high Point">별점 높은순</option>
         </select>
 	</div>
 
@@ -56,5 +56,7 @@
 		</div>
 	
 </div>
+<script>
 
+</script>
 

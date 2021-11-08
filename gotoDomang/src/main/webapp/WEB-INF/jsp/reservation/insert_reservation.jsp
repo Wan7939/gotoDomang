@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <h2 class="text-center font-weight-bold m-4">예약 하기</h2>
 
 <div class="d-flex justify-content-center">
@@ -8,7 +9,7 @@
 	<div class="reservation-box">
 	
 		<div class="subject-text my-2 font-weight-bold">이름</div>
-		<input id="inputSize" type="text" class="form-control" name="name">
+		<input id="inputSize" type="text" class="form-control" value="${userName}" name="name">
 
 		<div class="subject-text my-2 font-weight-bold">예약날짜</div>
 		<input type="text" class="form-control" name="date">

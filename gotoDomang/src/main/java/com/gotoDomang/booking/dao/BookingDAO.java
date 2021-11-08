@@ -11,6 +11,8 @@ import com.gotoDomang.booking.model.Booking;
 public interface BookingDAO {
 	public List<Booking> selectBookingList();
 	
+	public List<Booking> selectBookingListByUserId(int userId);
+	
 	public int insertBooking(
 			@Param("userId") int userId
 			,@Param("hotelId") int hotelId
@@ -22,4 +24,6 @@ public interface BookingDAO {
 			, @Param("state") String state);
 	
 	public Booking selectHotel(int id);
+	
+	public int deleteBooking(int id);
 }

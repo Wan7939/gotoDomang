@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -49,6 +50,20 @@ public class BookingRestController {
 			result.put("result", "error");
 			logger.error("[예약하기] 예약하기 중 실패하였습니다.");
 		}
+		return result;
+	}
+	
+	@DeleteMapping("/user/booking/delete")
+	public Map<String, Object> delete(
+			@RequestParam("bookingId") int bookingId) {
+		
+		
+		bookingBO.deleteBooking(bookingId);
+		
+	
+		Map<String, Object> result = new HashMap<>();
+		result.put("result", "success");
+		
 		return result;
 	}
 }

@@ -52,6 +52,7 @@
 
 
 		<div class="d-flex justify-content-center mt-5">
+		
 			<div class="contents-box col-9 rows-3">
 				<div id="review-card" class="d-flex write-box border rounded m-3 review-detail">
 					<div class="card w-100 h-100 border-0 ml-3">
@@ -66,6 +67,12 @@
 							</div>
 						</div>
 					</div>
+					<c:if test="${userId eq hotel.userId}">
+						<a href="#" class="reviewDelBtn" data-review-id="${hotel.id}">
+							<img src="https://www.iconninja.com/files/603/22/506/x-icon.png"
+							width="10px" height="10px">
+						</a>
+					</c:if>
 				</div>
 			</div>
 		</div>
@@ -73,7 +80,7 @@
 </c:forEach>
 <script>
 
-	// 댓글 쓰기
+	// 리뷰 쓰기
 		$('.writeBtn').on('click', function(e) {
 			e.preventDefault();
 			
@@ -111,5 +118,26 @@
 				}
 			});
 		});
-	
+		$(document).ready(function() {
+			$('.reviewDelBtn').on('click', function(e) {
+				e.preventDefault();
+				let reviewId = $('.reviewDelBtn').data('review-id');
+				alert(reviewId);
+				
+				$.ajax({
+					type:'delete'
+					, url: 'review/delete'
+					, data: {"reviewId" : reviewId}
+					, success: function(data) {
+						if (data.result == 'success') {
+							alert("삭제 됐습니다.");
+							location.reload();
+						}
+					}
+					, error: function(e) {
+						alert('삭제하는데 실패했습니다.' + e);
+					}
+				});
+			});
+		}); 
 		</script>
