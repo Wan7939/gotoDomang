@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="user"/>
 			<item value="reservationController"/>
 			<item value="예약하기"/>
 			<item value="hotelName"/>

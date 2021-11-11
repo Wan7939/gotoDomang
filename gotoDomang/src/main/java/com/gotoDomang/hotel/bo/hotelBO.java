@@ -1,6 +1,7 @@
 package com.gotoDomang.hotel.bo;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -34,6 +35,21 @@ public class HotelBO {
 	
 	public Hotel getHotel(int id) {
 		return hotelDAO.selectHotel(id);
+	}
+	
+	public List<Hotel> getHotelListByType(String type) {
+		if (type.equals("lowPrice")) {
+			return hotelDAO.selectHotelListByLowPrice(type);
+		}else if (type.equals("highPrice")) {
+			return hotelDAO.selectHotelListByHighPrice(type);
+		}
+//		else if (type.equals("lowPoint")) {
+//			return hotelDAO.selectHotelListByLowPoint(type);
+//		}else if (type.equals("highPoint")) {
+//			return hotelDAO.selectHotelListByHighPoint(type);
+//		}
+		return new ArrayList<>();
+					
 	}
 	
 	

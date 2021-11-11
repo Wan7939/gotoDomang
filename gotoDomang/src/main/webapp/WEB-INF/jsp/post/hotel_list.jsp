@@ -17,11 +17,12 @@
 		</div>
 	</form>
 
-	<select>
-            <option class="lowPrice">가격 낮은순</option>
-            <option class="high Price">가격 높은순</option>
-            <option class="lowPoint">별점 낮은순</option>
-            <option class="high Point">별점 높은순</option>
+	<select id="sel">
+			<option>--선택하기--</option>
+            <option value="lowPrice">가격 낮은순</option>
+            <option value="highPrice">가격 높은순</option>
+           <!-- <option value="lowPoint">별점 낮은순</option>
+            <option value="highPoint">별점 높은순</option> --> 
         </select>
 	</div>
 
@@ -49,8 +50,8 @@
 			</div>
 			
 			<div class="d-flex justify-content-end">
-				<a id="revewBtn" class="btn btn-info mr-2" href="/user/review_view?hotelId=${hotel.id}">후기보기</a>
-				<a id="reservationBtn" class="btn btn-info " href="/user/insert_reservation?hotelId=${hotel.id}">예약하기</a>
+				<a id="revewBtn" class="btn btnReview mr-2 text-white" href="/user/review_view?hotelId=${hotel.id}">후기보기</a>
+				<a id="reservationBtn" class="btn btnReservation text-white" href="/user/insert_reservation?hotelId=${hotel.id}">예약하기</a>
 			</div>
 		</c:forEach>
 		</div>
@@ -58,5 +59,17 @@
 </div>
 <script>
 
-</script>
 
+	$(document).ready(function() {
+
+		$('#sel').on('change', function(e) {
+			e.preventDefault();
+			alert($(this).val());
+			let selectedValue = $('#sel option:selected').val();
+
+			location.href = '/hotel/list_view?type=' + selectedValue;
+
+		});
+
+	});
+</script>

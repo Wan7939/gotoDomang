@@ -18,6 +18,66 @@
 			`hotel`
 		ORDER BY `id` DESC
 	</select>
+
+	<select id="selectHotelListByLowPrice" parameterType="String"
+		resultType="com.gotoDomang.hotel.model.Hotel">
+		SELECT
+		`id`
+		,`hotelName`
+		,`location`
+		,`price`
+		,`hotelNumber`
+		,`content`
+		,`imagePath`
+		,`createdAt`
+		,`updatedAt`
+		FROM
+		`hotel`
+		ORDER BY price ASC;
+	</select>
+
+	<select id="selectHotelListByHighPrice" parameterType="String"
+		resultType="com.gotoDomang.hotel.model.Hotel">
+		SELECT
+		`id`
+		,`hotelName`
+		,`location`
+		,`price`
+		,`hotelNumber`
+		,`content`
+		,`imagePath`
+		,`createdAt`
+		,`updatedAt`
+		FROM
+		`hotel`
+		ORDER BY price DESC;
+	</select>
+	
+	<!--
+	 <select id="selectHotelListByLowPoint" parameterType="String"
+		resultType="com.gotoDomang.hotel.model.Hotel">
+		SELECT
+			AVG(point)
+		FROM
+			 `review`
+		where 
+			`hotelId` = #{hotelId}
+		ORDER BY point DESC;
+		
+	</select>
+	
+	<select id="selectHotelListByHighPoint" parameterType="String"
+		resultType="com.gotoDomang.hotel.model.Hotel">
+		SELECT
+			AVG(point) 
+		FROM
+			 `review`
+		where 
+			`hotelId` = #{hotelId}
+		ORDER BY point ASC;
+		
+	</select>
+	 -->
 	<insert id="insertHotel" parameterType="map">
 			INSERT INTO `hotel`
 			(

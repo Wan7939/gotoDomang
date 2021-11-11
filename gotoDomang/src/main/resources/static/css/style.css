@@ -17,6 +17,10 @@ header {background-color:#F5F6CE; }
 .btn-sign-in {background-color:#F5F6CE;}
 .btn-sign-up {background-color:#CEF6D8;}
 
+
+.btnReview {background-color:#81BEF7;}
+.btnReservation {background-color:#819FF7;}
+
 #inputSize {width: 400px;}
 
 #review-card{ height:150px;}

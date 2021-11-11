@@ -27,6 +27,13 @@ public interface HotelDAO {
 	
 	public Hotel selectHotel(int id);
 	
+	public List<Hotel> selectHotelListByLowPrice(String type);
 	
+	public List<Hotel> selectHotelListByHighPrice(String type);
+	
+//	public List<Hotel> selectHotelListByLowPoint(String type);
+//
+//	public List<Hotel> selectHotelListByHighPoint(String type);
+
 	public void deleteHotel(int id);
 }

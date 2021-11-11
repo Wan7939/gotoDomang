@@ -3,7 +3,7 @@
 <div class="d-flex justify-content-center ml-5">
 	<div class="sign-up-box">
 		<h1 class="mb-4">호텔 등록</h1>
-		
+		<form id="hotel_registration" method="post" action="/reservation/manager_view">
 			<div class="d-flex">
 					<div>
 						<span>*호텔 이름</span>
@@ -38,7 +38,7 @@
 					<button type="button" id="registrationBtn" class="btn btn-block">호텔 등록</button>
 				<!--  <a id="registrationBtn" class="btn btn-block btn-sign-up" href="/hotel/manager_list">호텔 등록2</a> -->	
 				</div>
-			
+			</form>
 	</div>
 </div>
 

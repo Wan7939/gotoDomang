@@ -53,5 +53,5 @@ public class HotelRestController {
 		
 		return result;
 	}
-			
+	
 }

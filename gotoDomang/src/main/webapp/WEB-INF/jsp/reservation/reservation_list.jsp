@@ -22,7 +22,7 @@
 					<td><fmt:formatDate value="${content.booking.date}"
 							pattern="yyyy-MM-dd" /></td>
 					<td>${content.booking.headcount}</td>
-					<td>${content.hotel.hotelName}</td>
+					<td>z</td>
 					<td>${content.hotel.hotelNumber}</td>
 					<td><c:choose>
 							<c:when test="${content.booking.state eq '확정'}">
@@ -49,7 +49,7 @@
 </div>
 
 <script>
-$(document).ready(function() {
+
 	$('.delBtn').on('click', function(e) {
 		e.preventDefault();
 		let bookingId = $('.delBtn').data('booking-id');
@@ -70,5 +70,5 @@ $(document).ready(function() {
 			}
 		});
 	});
-}); 
+
 </script>

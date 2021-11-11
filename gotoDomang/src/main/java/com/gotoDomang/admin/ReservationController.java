@@ -21,7 +21,11 @@ public class ReservationController {
 	
 	@Autowired
 	private HotelBO hotelBO;
-	
+	/**
+	 * 호텔 등록
+	 * @param model
+	 * @return
+	 */
 	// 요청 URL: http://localhost/reservation/manager_view
 		@RequestMapping("/reservation/manager_view")
 		public String managerView(Model model) {
