@@ -3,7 +3,6 @@ INDEX VERSION 1.131+D:\¹Ú°æ¿Ï\7_spring_preject\gotoDomang_workspace\.metadata\.p
 2862473186.index
 1982372595.index
 826591827.index
-3682375912.index
 933503165.index
 1379546745.index
 895109430.index
