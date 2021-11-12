@@ -1,6 +1,0 @@
-package com.gotoDomang.test.dao;
-
-@Repository
-public interface TestDAO {
-	public List<Map<String, Object>> selectUserList();
-}

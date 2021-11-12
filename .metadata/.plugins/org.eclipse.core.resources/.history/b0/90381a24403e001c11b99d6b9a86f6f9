@@ -1,0 +1,26 @@
+package com.gotoDomang.booking.model;
+
+import java.util.List;
+
+import com.gotoDomang.hotel.model.Hotel;
+
+public class Content {
+	
+	private Booking booking;
+	private List<Hotel> hotelList;
+	
+	public Booking getBooking() {
+		return booking;
+	}
+	public void setBooking(Booking booking) {
+		this.booking = booking;
+	}
+	public List<Hotel> getHotelList() {
+		return hotelList;
+	}
+	public void setHotelList(List<Hotel> hotelList) {
+		this.hotelList = hotelList;
+	}
+	
+
+}
