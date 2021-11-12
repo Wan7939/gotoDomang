@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+header {height: 65px;}
+header .logo {height: 50px;}
+header .login-info {height: 50px;}
+header .font-color{color:#F7819F;}
+
+
+aside{width: 250px;}
+aside {background-color:#81BEF7;}
+
+.menu-font {
+    color:white;
+    font-size:17px;
+    font-weight: bold;
+}
+
+.menu-font:hover {
+    color:white;
+    border: 2px solid white;
+}
+
+#hotel-card{ height:350px;}
+#hotel-detail {
+        border: 1px solid #735e5e;
+         height:350px;
+        overflow:auto; 
+    }
+   
+    
+#imageBtn {background-color:#81BEF7;}
+#imageBtn {color:white;}
+#registrationBtn {background-color:#81BEF7;}
+#registrationBtn {color:white;}
+
+footer {height: 50px;}
+
+
+
+

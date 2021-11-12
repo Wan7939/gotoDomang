@@ -1,0 +1,45 @@
+package com.gotoDomang.booking.bo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gotoDomang.booking.model.Booking;
+import com.gotoDomang.booking.model.Content;
+import com.gotoDomang.hotel.bo.HotelBO;
+import com.gotoDomang.hotel.model.Hotel;
+
+@Service
+public class ContentBO {
+	
+	@Autowired
+	private BookingBO bookingBO;
+	
+	@Autowired
+	private HotelBO hotelBO;
+	
+	public List<Content> getContentList(Integer userId) {
+		List<Content> contentList = new ArrayList<>();
+		
+		// Booking 목록
+				List<Booking> bookingList = bookingBO.getBookingList()
+				for (Booking booking : bookingList) {
+					Content content = new Content();
+					content.setBooking(booking);
+					
+					// Post의 댓글 - Comment 목록
+					List<Hotel> hotelList = hotelBO.getHotelList(booking.getId());
+					content.setHotelList(hotelList);
+					
+					contentList.add(content);
+				}
+		
+		
+		return contentList;
+	}
+		
+		
+		
+}

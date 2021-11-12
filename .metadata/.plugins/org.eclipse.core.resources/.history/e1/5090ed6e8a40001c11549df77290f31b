@@ -1,0 +1,67 @@
+package com.gotoDomang.booking.bo;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gotoDomang.booking.dao.BookingDAO;
+import com.gotoDomang.booking.model.Booking;
+import com.gotoDomang.hotel.model.Hotel;
+
+
+@Service
+public class BookingBO {
+
+	@Autowired
+	private BookingDAO bookingDAO;
+	
+	
+	
+	public List<Booking> getBookingList() {
+		return bookingDAO.selectBookingList();
+	}
+	
+	public List<Booking> getBookingListByUserId(int userId) {
+		return bookingDAO.selectBookingListByUserId(userId);
+	}
+	
+	public Booking getBooking(int hotelId) {
+		return bookingDAO.selectHotel(hotelId);
+	}
+	
+	public int insertBooking(
+			int userId
+			,int hotelId
+			,String name
+			,String date
+			,int day
+			,int headcount
+			,String phoneNumber) {
+		
+		return bookingDAO.insertBooking(userId,hotelId, name, date, day, headcount, phoneNumber, "대기중");
+	}
+	
+public void deleteBooking(int bookingId) {
+		
+		Booking hotel = hotelDAO.selectHotel(bookingId);
+		if (hotel == null) {
+			logger.warn("[글 삭제] 이미 삭제되었습니다.");
+			return;
+		}
+		
+		// post 삭제
+		hotelDAO.deleteHotel(hotelId);
+	
+		// image 삭제
+		String imagePath = hotel.getImagePath();
+		if (imagePath != null) {
+			try {
+				fileManagerService.deleteFile(imagePath);
+			} catch (IOException e) {
+				logger.warn("[삭제에 실패했습니다.] " + imagePath);
+			}
+		}
+	}
+}

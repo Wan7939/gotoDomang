@@ -1,2 +1,14 @@
 1634553728914	Rename package 'com.gotoDomang.test.bo'
 1634553917165	Rename resource 'application.properties'
+1634556307778	Delete element
+1634564863030	Move file
+1634646900691	Rename package 'com.gotoDomang.hotel'
+1634646911993	Rename type 'HotelController'
+1634646983325	Rename resource 'hotel'
+1634647127007	Rename resource 'include(admin)'
+1634724369858	Delete element
+1634724810205	Rename resource 'footer.jsp'
+1634724817119	Rename resource 'gnb.jsp'
+1634725032171	Delete element
+1634725049772	Rename resource 'layout.jsp'
+1634812371694	Rename type 'hotelBO'
