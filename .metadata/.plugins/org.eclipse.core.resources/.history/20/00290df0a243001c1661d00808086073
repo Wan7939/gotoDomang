@@ -18,8 +18,7 @@ public class FileManagerService {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	// 실제 이미지가 저장될 경로					D:\박경완\7_spring_preject\gotoDomang_workspace\images
-	//public final static String FILE_UPLOAD_PATH = "D:\\박경완\\7_spring_preject\\gotoDomang_workspace\\images/";
-	public final static String FILE_UPLOAD_PATH = "/home/ec2-user/upload_images/";
+	public final static String FILE_UPLOAD_PATH = "D:\\박경완\\7_spring_preject\\gotoDomang_workspace\\images/";
 	
 	public String saveFile(MultipartFile file) throws IOException {
 		//  파일 디렉토리 경로 예	: hotel_162099585780/apple.png
