@@ -1,0 +1,14 @@
+package com.gotoDomang.booking.bo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ContentBO {
+	
+	@Autowired
+	private BookingBO bookingBO;
+	
+	@Autowired
+	private HotelBO hotelBO;
+}

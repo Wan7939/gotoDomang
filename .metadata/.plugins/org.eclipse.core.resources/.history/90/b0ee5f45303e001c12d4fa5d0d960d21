@@ -1,0 +1,19 @@
+package com.gotoDomang.booking.bo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gotoDomang.hotel.bo.HotelBO;
+
+@Service
+public class ContentBO {
+	
+	@Autowired
+	private BookingBO bookingBO;
+	
+	@Autowired
+	private HotelBO hotelBO;
+	
+	public List<Content> getContentList(Integer userId) {
+		List<Content> contentList = new ArrayList<>();
+}
