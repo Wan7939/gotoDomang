@@ -1,8 +1,0 @@
-package com.gotoDomang.booking.model;
-
-public class Content {
-	
-	private Booking booking;
-	private List<Hotel> hotelList
-
-}
